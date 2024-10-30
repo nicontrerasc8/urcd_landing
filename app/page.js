@@ -12,7 +12,8 @@ export default function Home() {
 
       {/* Header */}
       <header className="bg-[#e8f7f8] text-[#0075ac] py-4 animate-fadeInDown">
-        <nav className="container mx-auto flex justify-center">
+        <nav className="container mx-auto flex items-center justify-center">
+          <Image src="/logo.png" alt="Logo Un Ratito con Dios" width={40} height={40} className="mr-2" />
           <h1 className="text-2xl font-bold">Un Ratito con Dios</h1>
         </nav>
       </header>
