@@ -1,100 +1,148 @@
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-white min-h-screen">
+      <Head>
+        <title>Un ratito con Dios</title>
+        <meta name="description" content="Una aplicación católica para fortalecer tu vida espiritual." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      {/* Header */}
+      <header className="bg-[#e8f7f8] text-[#0075ac] py-4 animate-fadeInDown">
+        <nav className="container mx-auto flex justify-center">
+          <h1 className="text-2xl font-bold">Un Ratito con Dios</h1>
+        </nav>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex flex-col items-center px-4">
+        {/* Welcome Section */}
+        <section className="text-center py-16">
+          <h1 className="text-5xl font-bold text-[#0075ac] transition-opacity duration-700 opacity-0 animate-fadeIn">
+            Conecta con Dios todos los días
+          </h1>
+          <p className="mt-6 text-xl text-gray-700 transition-opacity duration-1000 opacity-0 animate-fadeIn max-w-3xl mx-auto">
+            Sumérgete en un espacio lleno de paz y conexión espiritual. "Un ratito con Dios" es tu acompañante perfecto para fortalecer tu fe, alimentar tu alma y encontrar la tranquilidad que necesitas cada día. Descubre oraciones, reflexiones y herramientas para vivir una vida espiritual más profunda y significativa.
+          </p>
+        </section>
+
+        
+
+        {/* Mockups Section */}
+        <section className="bg-[#e8f7f8] py-16">
+          <h2 className="text-4xl font-bold text-center text-[#0075ac] mb-12">Explora la Aplicación</h2>
+          <div className="max-w-6xl mx-auto flex flex-col gap-12 px-4">
+            {/* Mockup 1 */}
+            <div className="flex flex-col md:flex-row items-center bg-white p-10 rounded-lg shadow-md">
+              <Image
+                src="/1-portrait.png"
+                alt="Devocionario Online"
+                width={250}
+                height={500}
+                className="rounded-md mb-6 md:mb-0"
+              />
+              <div className="md:ml-8 text-center md:text-left">
+                <h3 className="text-3xl font-bold text-[#0075ac]">Ora en cualquier lugar a través del Devocionario</h3>
+                <p className="text-lg text-gray-700 mt-4">
+                  Sumérgete en una rica variedad de oraciones diseñadas para acompañarte en cada momento del día. Encuentra palabras de consuelo, gratitud y reflexión que llenarán de paz tu corazón.
+                </p>
+              </div>
+            </div>
+
+            {/* Mockup 2 */}
+            <div className="flex flex-col md:flex-row items-center bg-white p-10 rounded-lg shadow-md">
+              <Image
+                src="/2-portrait.png"
+                alt="Fortalece tu vida espiritual"
+                width={250}
+                height={500}
+                className="rounded-md mb-6 md:mb-0"
+              />
+              <div className="md:ml-8 text-center md:text-left">
+                <h3 className="text-3xl font-bold text-[#0075ac]">Eleva Tu Espíritu Cada Día</h3>
+                <p className="text-lg text-gray-700 mt-4">
+                  Reflexiona cada día con el examen de conciencia y documenta tu crecimiento espiritual. Descubre cómo Dios trabaja en tu vida a través de un diario que nutre tu fe y te impulsa a ser la mejor versión de ti mismo.
+                </p>
+              </div>
+            </div>
+
+            {/* Mockup 3 */}
+            <div className="flex flex-col md:flex-row items-center bg-white p-10 rounded-lg shadow-md">
+              <Image
+                src="/3-portrait.png"
+                alt="Curso de Biblia"
+                width={250}
+                height={500}
+                className="rounded-md mb-6 md:mb-0"
+              />
+              <div className="md:ml-8 text-center md:text-left">
+                <h3 className="text-3xl font-bold text-[#0075ac]">Descubre la Sabiduría de las Escrituras</h3>
+                <p className="text-lg text-gray-700 mt-4">
+                  Adéntrate en la Palabra de Dios con un curso bíblico estructurado. Aprende sobre las Escrituras, profundiza en sus enseñanzas y descubre el camino que Dios ha trazado para ti.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="bg-[#e8f7f8] py-16 mt-10">
+          <h2 className="text-3xl font-bold text-center text-[#0075ac] mb-8">Testimonios de Nuestros Usuarios</h2>
+          <div className="max-w-6xl mx-auto flex flex-col gap-8 px-4">
+            {/* Testimonial 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
+              <p className="text-gray-600 italic mb-4">"Un ratito con Dios ha cambiado mi vida diaria. Ahora encuentro paz cada día con solo unos minutos de reflexión."</p>
+              <h3 className="text-lg font-semibold text-[#0075ac]">- María López</h3>
+              <p className="text-sm text-gray-500">Lima, Perú</p>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
+              <p className="text-gray-600 italic mb-4">"Es maravilloso cómo una aplicación puede ayudarte a crecer espiritualmente. La uso todas las mañanas."</p>
+              <h3 className="text-lg font-semibold text-[#0075ac]">- Juan Pérez</h3>
+              <p className="text-sm text-gray-500">Cusco, Perú</p>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
+              <p className="text-gray-600 italic mb-4">"Me encanta esta app. Me ha ayudado a enfocarme y a tener un momento de paz en mi vida agitada."</p>
+              <h3 className="text-lg font-semibold text-[#0075ac]">- Ana García</h3>
+              <p className="text-sm text-gray-500">Arequipa, Perú</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="bg-[#e8f7f8] text-[#0075ac] text-center py-16 mt-12 w-full animate-fadeInUp">
+          <h2 className="text-3xl font-bold">Descarga la App Ahora</h2>
+          <p className="mt-4">Disponible en la App Store y Google Play.</p>
+          <div className="flex max-md:flex-col items-center justify-center mt-6 space-x-4">
+            <a
+              href="https://apps.apple.com/pe/app/un-ratito-con-dios/id6698850815"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform transition-transform duration-300 hover:scale-110"
+            >
+              <Image src="/appstore.svg" alt="App Store" width={150} height={48} />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.nicontrerasc8.urcd&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform transition-transform duration-300 hover:scale-110"
+            >
+              <Image src="/google-play.png" alt="Google Play" width={200} height={48} />
+            </a>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="bg-[#e8f7f8] text-center py-4 mt-16 transition-opacity duration-1000 opacity-0 animate-fadeIn">
+        <p className="text-gray-600">© {new Date().getFullYear()} Un ratito con Dios. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
