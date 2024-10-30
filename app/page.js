@@ -26,11 +26,9 @@ export default function Home() {
             Conecta con Dios todos los días
           </h1>
           <p className="mt-6 text-xl text-gray-700 transition-opacity duration-1000 opacity-0 animate-fadeIn max-w-3xl mx-auto">
-            Sumérgete en un espacio lleno de paz y conexión espiritual. "Un ratito con Dios" es tu acompañante perfecto para fortalecer tu fe, alimentar tu alma y encontrar la tranquilidad que necesitas cada día. Descubre oraciones, reflexiones y herramientas para vivir una vida espiritual más profunda y significativa.
+            Sumérgete en un espacio lleno de paz y conexión espiritual. &quot;Un ratito con Dios&quot; es tu acompañante perfecto para fortalecer tu fe, alimentar tu alma y encontrar la tranquilidad que necesitas cada día. Descubre oraciones, reflexiones y herramientas para vivir una vida espiritual más profunda y significativa.
           </p>
         </section>
-
-        
 
         {/* Mockups Section */}
         <section className="bg-[#e8f7f8] py-16">
@@ -95,21 +93,21 @@ export default function Home() {
           <div className="max-w-6xl mx-auto flex flex-col gap-8 px-4">
             {/* Testimonial 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
-              <p className="text-gray-600 italic mb-4">"Un ratito con Dios ha cambiado mi vida diaria. Ahora encuentro paz cada día con solo unos minutos de reflexión."</p>
+              <p className="text-gray-600 italic mb-4">&quot;Un ratito con Dios ha cambiado mi vida diaria. Ahora encuentro paz cada día con solo unos minutos de reflexión.&quot;</p>
               <h3 className="text-lg font-semibold text-[#0075ac]">- María López</h3>
               <p className="text-sm text-gray-500">Lima, Perú</p>
             </div>
 
             {/* Testimonial 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
-              <p className="text-gray-600 italic mb-4">"Es maravilloso cómo una aplicación puede ayudarte a crecer espiritualmente. La uso todas las mañanas."</p>
+              <p className="text-gray-600 italic mb-4">&quot;Es maravilloso cómo una aplicación puede ayudarte a crecer espiritualmente. La uso todas las mañanas.&quot;</p>
               <h3 className="text-lg font-semibold text-[#0075ac]">- Juan Pérez</h3>
               <p className="text-sm text-gray-500">Cusco, Perú</p>
             </div>
 
             {/* Testimonial 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
-              <p className="text-gray-600 italic mb-4">"Me encanta esta app. Me ha ayudado a enfocarme y a tener un momento de paz en mi vida agitada."</p>
+              <p className="text-gray-600 italic mb-4">&quot;Me encanta esta app. Me ha ayudado a enfocarme y a tener un momento de paz en mi vida agitada.&quot;</p>
               <h3 className="text-lg font-semibold text-[#0075ac]">- Ana García</h3>
               <p className="text-sm text-gray-500">Arequipa, Perú</p>
             </div>
