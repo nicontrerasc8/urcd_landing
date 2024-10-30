@@ -88,31 +88,30 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="bg-[#e8f7f8] py-16 mt-10">
+       {/*  <section className="bg-[#e8f7f8] py-16 mt-10">
           <h2 className="text-3xl font-bold text-center text-[#0075ac] mb-8">Testimonios de Nuestros Usuarios</h2>
           <div className="max-w-6xl mx-auto flex flex-col gap-8 px-4">
-            {/* Testimonial 1 */}
+
             <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
               <p className="text-gray-600 italic mb-4">&quot;Un ratito con Dios ha cambiado mi vida diaria. Ahora encuentro paz cada día con solo unos minutos de reflexión.&quot;</p>
               <h3 className="text-lg font-semibold text-[#0075ac]">- María López</h3>
               <p className="text-sm text-gray-500">Lima, Perú</p>
             </div>
 
-            {/* Testimonial 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
+                 <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
               <p className="text-gray-600 italic mb-4">&quot;Es maravilloso cómo una aplicación puede ayudarte a crecer espiritualmente. La uso todas las mañanas.&quot;</p>
               <h3 className="text-lg font-semibold text-[#0075ac]">- Juan Pérez</h3>
               <p className="text-sm text-gray-500">Cusco, Perú</p>
             </div>
 
-            {/* Testimonial 3 */}
+    
             <div className="bg-white p-6 rounded-lg shadow-md text-center transform transition-transform duration-300 hover:scale-105">
               <p className="text-gray-600 italic mb-4">&quot;Me encanta esta app. Me ha ayudado a enfocarme y a tener un momento de paz en mi vida agitada.&quot;</p>
               <h3 className="text-lg font-semibold text-[#0075ac]">- Ana García</h3>
               <p className="text-sm text-gray-500">Arequipa, Perú</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Call to Action */}
         <section className="bg-[#e8f7f8] text-[#0075ac] text-center py-16 mt-12 w-full animate-fadeInUp">
